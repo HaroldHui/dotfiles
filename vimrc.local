@@ -1,0 +1,61 @@
+" Remap shortcuts in insert mode
+inoremap <c-d> <Del>
+inoremap <c-a> <Home>
+inoremap <c-h> <BS>
+inoremap <c-e> <End>
+" scroll the viewport faster
+nnoremap <C-e> 3<C-e>
+nnoremap <C-y> 3<C-y>
+
+" commentary
+map <Leader>g gcc
+"vim-tmux-navigator
+let g:tmux_navigator_no_mappings = 1
+nnoremap <silent> <c-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <c-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <c-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <c-l> :TmuxNavigateRight<cr>
+nnoremap <silent> <c-\> :TmuxNavigatePrevious<cr>
+
+" Use system clipboard
+" http://stackoverflow.com/questions/8134647/copy-and-paste-in-vim-via-keyboard-between-different-mac-terminals
+set clipboard+=unnamed
+" Theme
+set background=light
+if !has("gui_running")
+  let g:gruvbox_italic=0
+endif
+set t_Co=256 | set background=dark | colorscheme gruvbox
+
+" Set plugin vim-airline theme
+let g:airline_theme='dark'
+
+" Airline (status line)
+let g:airline_powerline_fonts = 1
+
+" Ack (uses Ag behind the scenes)
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
+" Gist authorisation settings
+let g:github_user = $GITHUB_USER
+let g:github_token = $GITHUB_TOKEN
+let g:gist_detect_filetype = 1
+let g:gist_open_browser_after_post = 1
+" Nerd tree
+map <C-n> :NERDTreeToggle<CR>
+autocmd StdinReadPre * let s:std_in=1
+"close NERDTree after a file is opened
+let g:NERDTreeQuitOnOpen=0
+" show hidden files in NERDTree
+let NERDTreeShowHidden=1
+
+" Configure cursor for tmux running in iTerm2 on OS X
+let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+let &t_SR = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=2\x7\<Esc>\\"
+let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+
+" set autoread with vim-tmux-focus-events
+set autoread
+
+" automatically rebalance windows on vim resize
+autocmd VimResized * :wincmd =
