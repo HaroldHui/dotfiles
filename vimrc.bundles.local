@@ -7,9 +7,6 @@ Plug 'Townk/vim-autoclose'
 Plug 'tpope/vim-commentary'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'Valloric/YouCompleteMe'
-
-if executable('ag')
-  Plug 'epmatsw/ag.vim.git'
-elseif executable('ack')
-  Plug 'mileszs/ack.vim'
-endif
+Plug 'tmux/tmux'
+Plug 'benmills/vimux'
+Plug 'easymotion/vim-easymotion'
