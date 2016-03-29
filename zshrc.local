@@ -89,7 +89,7 @@ alias v='f -e vim'
 if [ "$TMUX" = "" ]; then tmux; fi
 # Accept suggestions without leaving insert mode
 bindkey '^f' vi-forward-word
-
+bindkey -v
 antigen bundle b4b4r07/enhancd
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting

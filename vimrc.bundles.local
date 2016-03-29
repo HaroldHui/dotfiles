@@ -10,3 +10,6 @@ Plug 'Valloric/YouCompleteMe'
 Plug 'tmux/tmux'
 Plug 'benmills/vimux'
 Plug 'easymotion/vim-easymotion'
+
+" Python
+Plug 'vim-scripts/indentpython.vim'
