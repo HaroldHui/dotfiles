@@ -3,7 +3,7 @@ Plug 'bling/vim-airline'
 Plug 'morhetz/gruvbox'
 " Utility
 Plug 'tpope/vim-surround'
-Plug 'Townk/vim-autoclose'
+" Plug 'Townk/vim-autoclose'
 Plug 'tpope/vim-commentary'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'Valloric/YouCompleteMe'
