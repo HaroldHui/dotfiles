@@ -17,6 +17,35 @@ nnoremap <silent> <c-k> :TmuxNavigateUp<cr>
 nnoremap <silent> <c-l> :TmuxNavigateRight<cr>
 nnoremap <silent> <c-\> :TmuxNavigatePrevious<cr>
 
+" Vimux key binding more info (:help vimux)
+let g:VimuxOrientation = "h"
+map <Leader>vp :VimuxPromptCommand<CR>
+map <Leader>vm :VimuxPromptCommand("make ")<CR>"
+map <Leader>vq :VimuxCloseRunner<CR>
+map <Leader>vl :VimuxRunLastCommand<CR>
+map <Leader>vi :VimuxInspectRunner<CR>
+
+" Configure Easymotion
+map \ <Plug>(easymotion-prefix)
+map / <Plug>(easymotion-sn)
+" fugitive git bindings
+nnoremap <space>ga :Git add %:p<CR><CR>
+nnoremap <space>gs :Gstatus<CR>
+nnoremap <space>gc :Gcommit -v -q<CR>
+nnoremap <space>gt :Gcommit -v -q %:p<CR>
+nnoremap <space>gd :Gdiff<CR>
+nnoremap <space>ge :Gedit<CR>
+nnoremap <space>gr :Gread<CR>
+nnoremap <space>gw :Gwrite<CR><CR>
+nnoremap <space>gl :silent! Glog<CR>:bot copen<CR>
+nnoremap <space>gp :Ggrep<Space>
+nnoremap <space>gm :Gmove<Space>
+nnoremap <space>gb :Git branch<Space>
+nnoremap <space>go :Git checkout<Space>
+nnoremap <space>gps :Dispatch! git push<CR>
+nnoremap <space>gpl :Dispatch! git pull<CR>
+
+set completeopt-=preview
 " Set vim to use relative number
 set relativenumber 
 set number
@@ -65,14 +94,5 @@ set autoread
 
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
-" Vimux key binding more info (:help vimux)
-let g:VimuxOrientation = "h"
-map <Leader>vp :VimuxPromptCommand<CR>
-map <Leader>vm :VimuxPromptCommand("make ")<CR>"
-map <Leader>vq :VimuxCloseRunner<CR>
-map <Leader>vl :VimuxRunLastCommand<CR>
-map <Leader>vi :VimuxInspectRunner<CR>
-" Configure Easymotion
-map \ <Plug>(easymotion-prefix)
-map / <Plug>(easymotion-sn)
-set completeopt-=preview
+" Highlight search matches
+set hlsearch
