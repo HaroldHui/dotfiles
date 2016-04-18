@@ -45,7 +45,7 @@ nnoremap <space>go :Git checkout<Space>
 nnoremap <space>gps :Dispatch! git push<CR>
 nnoremap <space>gpl :Dispatch! git pull<CR>
 
-set completeopt-=preview
+" set completeopt-=preview
 " Set vim to use relative number
 set relativenumber 
 set number
