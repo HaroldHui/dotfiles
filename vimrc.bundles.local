@@ -6,11 +6,17 @@ Plug 'tpope/vim-surround'
 " Plug 'Townk/vim-autoclose'
 Plug 'tpope/vim-commentary'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'Valloric/YouCompleteMe'
+" Plug 'Valloric/YouCompleteMe'
 Plug 'tmux/tmux'
 Plug 'benmills/vimux'
 Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdtree'
+" snippets
+Plug 'honza/vim-snippets'
+Plug 'SirVer/ultisnips'
+Plug 'Shougo/neosnippet'
+Plug 'Shougo/neosnippet-snippets'
 
+Plug 'Shougo/neocomplete.vim'
 " Python
 Plug 'vim-scripts/indentpython.vim'
