@@ -85,12 +85,22 @@ bindkey '^X^A' fasd-complete    # C-x C-a to do fasd-complete (fils and director
 bindkey '^X^F' fasd-complete-f  # C-x C-f to do fasd-complete-f (only files)
 bindkey '^X^D' fasd-complete-d  # C-x C-d to do fasd-complete-d (only directories)
 alias v='f -e vim'
+bindkey '^f' autosuggest-accept
 # Launch tmux at start
 if [ "$TMUX" = "" ]; then tmux; fi
+# handy keybindings
+bindkey "^A" beginning-of-line
+bindkey "^E" end-of-line
+bindkey "^K" kill-line
+bindkey "^R" history-incremental-search-backward
+bindkey "^P" history-search-backward
+bindkey "^Y" accept-and-hold
+bindkey "^N" insert-last-word
+bindkey -s "^T" "^[Isudo ^[A" # "t" for "toughguy"
 # Accept suggestions without leaving insert mode
-bindkey '^f' vi-forward-word
 # vi model
 # bindkey -v
+
 antigen bundle b4b4r07/enhancd
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
@@ -98,7 +108,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle tarruda/zsh-autosuggestions
 # Enable autosuggestions automatically.
 # zle-line-init() { zle autosuggest-start }; zle -N zle-line-init
-
+antigen bundle zsh-users/zsh-completions src
 antigen bundle chrissicool/zsh-256color
 
 antigen theme miloshadzic
