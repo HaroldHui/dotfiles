@@ -25,6 +25,7 @@
   editor = vim
 [merge]
   ff = only
+  tool = diffmerge
 [commit]
   template = ~/.gitmessage
 [fetch]
