@@ -1,0 +1,20 @@
+[user]
+  name = Shu Hui
+  email = dreamlock0630@gmail.com
+[alias]
+  ml = log --pretty=format:'%h %s [%an]' --graph
+  l = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  di = diff
+  ps = push
+  pl = pull
+[diff]
+	tool = diffmerge
+[merge]
+  tool = diffmerge
+[difftool "diffmerge"]
+	cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
+[mergetool "diffmerge"]
+	cmd = "diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$(if test -f \"$BASE\"; then echo \"$BASE\"; else echo \"$LOCAL\"; fi)\" \"$REMOTE\""
+	trustExitCode = true
+[http]
+	sslVerify = false
