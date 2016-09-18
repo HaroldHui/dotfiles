@@ -20,3 +20,10 @@ Plug 'Shougo/neosnippet-snippets'
 Plug 'Shougo/neocomplete.vim'
 " Python
 Plug 'vim-scripts/indentpython.vim'
+
+" Haskell
+Plug 'dag/vim2hs'
+
+" typescript
+Plug 'leafgarland/typescript-vim'
+
