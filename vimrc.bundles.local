@@ -12,6 +12,7 @@ Plug 'benmills/vimux'
 Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdtree'
 " snippets
+Plug 'Shougo/neocomplete.vim'
 Plug 'honza/vim-snippets'
 Plug 'SirVer/ultisnips'
 Plug 'Shougo/neosnippet'
@@ -27,3 +28,11 @@ Plug 'dag/vim2hs'
 " typescript
 Plug 'leafgarland/typescript-vim'
 
+
+" ruby
+Plug 'vim-scripts/ctags.vim'
+Plug 'vim-scripts/dbext.vim'
+Plug 'vim-scripts/matchit.zip'
+Plug 'kana/vim-textobj-user'
+Plug 'nelstrom/vim-textobj-rubyblock'
+Plug 'tpope/vim-rails'
