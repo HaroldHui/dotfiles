@@ -1,7 +1,7 @@
 " Remap shortcuts in insert mode
 inoremap <c-d> <Del>
-inoremap <c-a> <Home>
-inoremap <c-h> <BS>
+inoremap <c-h> <Home>
+inoremap <c-b> <BS>
 inoremap <c-e> <End>
 " scroll the viewport faster
 nnoremap <C-e> 3<C-e>
