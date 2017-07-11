@@ -37,3 +37,8 @@ Plug 'vim-scripts/matchit.zip'
 Plug 'kana/vim-textobj-user'
 Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'tpope/vim-rails'
+
+
+" react
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
