@@ -91,6 +91,8 @@ antigen bundle zsh-users/zsh-completions src
 antigen bundle chrissicool/zsh-256color
 
 antigen theme miloshadzic
+
+antigen apply
 # Enable fasd
 eval "$(fasd --init auto)"
 bindkey '^X^A' fasd-complete    # C-x C-a to do fasd-complete (fils and directories)
