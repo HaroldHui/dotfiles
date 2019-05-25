@@ -80,7 +80,6 @@ source ~/antigen.zsh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-antigen bundle b4b4r07/enhancd
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
 # set fish-style zsh-autosuggestions
