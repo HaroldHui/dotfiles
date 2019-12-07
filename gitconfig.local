@@ -1,6 +1,6 @@
 [user]
-  name = Shu Hui
-  email = dreamlock0630@gmail.com
+  name = Harold
+  email = harold@galaxycsf.com.au
 [alias]
   ml = log --pretty=format:'%h %s [%an]' --graph
   l = log --graph --decorate --pretty=oneline --abbrev-commit --all
