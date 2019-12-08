@@ -1,0 +1,9 @@
+" Color schemes
+Plug 'bling/vim-airline'
+Plug 'morhetz/gruvbox'
+
+Plug 'tpope/vim-commentary'
+Plug 'tmux/tmux'
+Plug 'benmills/vimux'
+Plug 'easymotion/vim-easymotion'
+Plug 'scrooloose/nerdtree'

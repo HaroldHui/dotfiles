@@ -1,0 +1,11 @@
+[user]
+  name = harold
+  email = harold@galaxycsf.com
+[alias]
+  di = diff
+  ps = push
+  pl = pull
+  s = status
+  cm = commit -v
+[http]
+	sslVerify = false
