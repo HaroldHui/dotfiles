@@ -1,4 +1,3 @@
 # Unix
 alias vpn="~/projects/tools/vpn.sh"
 export OKTA_USERNAME=shu.hui
-alias rea-as="~/projects/tools/rea-as_linux_amd64"
