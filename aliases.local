@@ -1,3 +1,4 @@
 # Unix
 alias vpn="~/projects/tools/vpn.sh"
 export OKTA_USERNAME=shu.hui
+alias ecr="~/projects/tools/ecr.sh"

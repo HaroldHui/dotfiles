@@ -4,6 +4,7 @@ Plug 'morhetz/gruvbox'
 
 Plug 'tpope/vim-commentary'
 Plug 'tmux/tmux'
+Plug 'christoomey/vim-tmux-navigator'
 Plug 'benmills/vimux'
 Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdtree'
